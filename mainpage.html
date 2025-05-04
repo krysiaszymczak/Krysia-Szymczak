@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+  <head>
+      <title>Krysia's Kronicles</title>
+</head>
+      <style type="text/css">
+          th
+          {
+              font-size:30px;
+              font-family:"Alegreya SC", bodoni, serif;
+          }
+          a
+          {
+              text-decoration:none;
+              color:darkseagreen;
+          }
+          .date
+          {
+              text-align: center;
+          }
+      </style>
+    <script>
+      const daysOfWeek = ['SUNDAY', 'MONDAY', 'TUESDAY', 'WEDNESDAY', 'THURSDAY', 'FRIDAY', 'SATURDAY'];
+      const months = ['JANUARY', 'FEBRUARY', 'MARCH', 'APRIL', 'MAY', 'JUNE', 'JULY', 'AUGUST', 'SEPTEMBER', 'OCTOBER', 'NOVEMBER', 'DECEMBER'];
+
+      const currentDate = new Date();
+      const dayOfWeek = daysOfWeek[currentDate.getDay()];
+      const month = months[currentDate.getMonth()];
+      const day = currentDate.getDate();
+      const year = currentDate.getFullYear();
+
+      const formattedDate = `${dayOfWeek}, ${month} ${day}, ${year}`;
+
+      window.onload = function() {
+        document.getElementById('current-date').innerHTML = formattedDate;
+      };
+    </script>
+  </head>
+  <body>
+      <div align="center">
+      <img src="newspapertitle.png" width="600">
+      </div>
+      <hr width="400"/>
+    <p class="date"><span id="current-date"></span></p>
+      <hr width="400"/>
+      <table border="0" align="center" width="1200">
+          <tr>
+              <th><a href="beaconpage.html"> Hardstone Psycho: An Album Review</a></th>
+              <th><a href="eliaspage.html">Simple Joys of Elias Lenkner</a></th>
+          </tr>
+          <tr>
+              <td style="text-align:center"><a href="beaconpage.html"><img src="hardstone.png"height="300"></a></td>
+              <td style="text-align:center"><a href="eliaspage.html"><img src="Elias.png"height="300"></a></td>
+          </tr>
+          <tr>
+              <td>In June of 2024, rapper, singer, and songwriter, Don Toliver, released his 4th studio album, Hardstone Psycho. This album was highly anticipated because of the two singles, “Deep In The Water” and “Attitude”, he dropped before the release. This album is a showcase of the evolution of his work as an artist and it shows through the lyrics and the production of each song. The album takes us through a rollercoaster of emotions as it starts off with the electric guitar riffs of “Kryptonite” and ends with a sentimental sound of longing through “Hardstone National Anthem”. That isn't the only reason this album stands out however. Toliver collabed with prominent artists such as Travis Scott, Future, Metro Boomin’, Charlie Wilson, and Teezo Touchdown. Each artist brings a different and unique sound to the song they are featured on. </td>
+              <td>The laughter of childhood echoes through memories of Pymatuning Lake, where summer days were spent splashing in the water and conquering playground adventures. Family gathered, siblings and cousins playing until the sun dipped below the horizon. These cherished moments left an imprint, shaping a love for togetherness and simple joys for Elias.
+</td>
+          </tr>
+      </table>
+  </body>
+</html>
+
+
+
+
+
